@@ -3,20 +3,14 @@ package stepdefinitions;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import pages.login.LoginPageObject;
+import pages.sigunp.SignUpPageObject;
 
 public class LoginSteps {
-    @And("^I select Log in option")
-    public void iSelectLogInOption() throws Throwable {
-        selectLogInOption();
-    }
+    LoginPageObject login = new LoginPageObject();
 
     @And("^I press Login button$")
     public void iPressLoginButton() throws Throwable {
-        pressLoginButton();
-    }
-
-    @Then("^I am logged in$")
-    public void iAmLoggedIn() throws Throwable {
-        isLoggedIn();
+        login.pressLoginButton();
     }
 }
