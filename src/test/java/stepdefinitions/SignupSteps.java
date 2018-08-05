@@ -5,55 +5,44 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.sigunp.SignUpPageObject;
 
 public class SignupSteps {
-    @Given("^I have opened homepage$")
-    public void iHaveOpenedHomepage() throws Throwable {
-        System.out.println("OPEN HOME PAGE");
-    }
 
-    @When("^I select My account menu$")
-    public void iSelectMyAccountMenu() throws Throwable {
-        selectMyAccountMenu();
-    }
-
-    @And("^I select Sign up button$")
-    public void iSelectSignUpButton() throws Throwable {
-        selectSignupButton();
-    }
+    SignUpPageObject signup = new SignUpPageObject();
 
     @And("^I enter First name$")
     public void iEnterFirstName() throws Throwable {
-        enterFirstName();
+        signup.enterFirstName("test");
     }
 
     @And("^I enter Last name$")
     public void iEnterLastName() throws Throwable {
-        enterLastName();
+        signup.enterLastName("test");
     }
 
     @And("^I enter Mobile number$")
     public void iEnterMobileNumber() throws Throwable {
-        enterMobileNumber();
+        signup.enterMobileNumber("test");
     }
 
     @And("^I enter Email address$")
     public void iEnterEmailAddress() throws Throwable {
-        enterEmailAddress();
+        signup.enterEmail("test");
     }
 
     @And("^I confirm Password$")
     public void iConfirmPassword() throws Throwable {
-        confirmPassword();
+        signup.enterConfirmPassword("test");
     }
 
     @And("^I select Sign up password$")
     public void iSelectSignUpPassword() throws Throwable {
-        selectSignUpPassword();
+        signup.selectSignupButton();
     }
 
-    @Then("^user account page is opened$")
-    public void userAccountPageIsOpened() throws Throwable {
-        isUserAccountPageOpened();
+    @And("^I enter Password$")
+    public void iEnterPassword() throws Throwable {
+        signup.enterPassword("test");
     }
 }
