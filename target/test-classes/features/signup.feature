@@ -2,7 +2,7 @@ Feature: this feature is about creating new accounts
 
   Scenario: Successfull sign-up
     Given I have opened homepage
-    When I select My ccount menu
+    When I select My account menu
       And I select Sign up button
       And I enter First name
       And I enter Last name

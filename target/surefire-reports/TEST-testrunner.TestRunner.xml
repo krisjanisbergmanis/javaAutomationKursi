@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testrunner.TestRunner" time="0.325" tests="0" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testrunner.TestRunner" time="0.396" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="LV"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tdlpacpro/Documents/javaAutomation/target/surefire/surefirebooter15457952268547655504.jar /Users/tdlpacpro/Documents/javaAutomation/target/surefire 2018-07-30T22-57-28_799-jvmRun1 surefire12125558495808656643tmp surefire_011449359429700297147tmp"/>
+    <property name="sun.java.command" value="/Users/tdlpacpro/Documents/javaAutomation/target/surefire/surefirebooter13853553837222173414.jar /Users/tdlpacpro/Documents/javaAutomation/target/surefire 2018-07-31T12-29-48_691-jvmRun1 surefire323864228962166247tmp surefire_013939069143805064752tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tdlpacpro/Documents/javaAutomation/target/test-classes:/Users/tdlpacpro/Documents/javaAutomation/target/classes:/Users/tdlpacpro/.m2/repository/io/cucumber/cucumber-junit/3.0.2/cucumber-junit-3.0.2.jar:/Users/tdlpacpro/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/tdlpacpro/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/cucumber-core/3.0.2/cucumber-core-3.0.2.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/cucumber-expressions/5.0.19/cucumber-expressions-5.0.19.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/datatable/1.0.3/datatable-1.0.3.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/datatable-dependencies/1.0.3/datatable-dependencies-1.0.3.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/cucumber-java/3.0.2/cucumber-java-3.0.2.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/gherkin-jvm-deps/1.0.4/gherkin-jvm-deps-1.0.4.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/tdlpacpro/.m2/repository/io/cucumber/cucumber-picocontainer/3.0.2/cucumber-picocontainer-3.0.2.jar:/Users/tdlpacpro/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/tdlpacpro/Documents/javaAutomation/target/surefire/surefirebooter15457952268547655504.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tdlpacpro/Documents/javaAutomation/target/surefire/surefirebooter13853553837222173414.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="10.0.2+13"/>
@@ -62,4 +62,5 @@
     <property name="java.class.version" value="54.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
+  <testcase name="Successfull sign-up" classname="this feature is about creating new accounts" time="0.009"/>
 </testsuite>
