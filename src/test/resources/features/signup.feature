@@ -9,7 +9,7 @@ Feature: this feature is about creating new accounts
       And I enter Mobile number
       And I enter Email address
       And I confirm Password
-      And I select Sign up password
+      And I click Sign up button
     Then user account page is opened
 
 
@@ -21,7 +21,7 @@ Feature: this feature is about creating new accounts
       And I enter Last name
       And I enter Mobile number
       And I enter Email address
-    And I enter Password
+      And I enter Password
       And I confirm Password
-      And I select Sign up password
+      And I click Sign up button
     Then user account page is opened

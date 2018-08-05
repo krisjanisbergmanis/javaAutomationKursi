@@ -22,7 +22,7 @@ public class NavigationPageObject {
 
     public SignUpPageObject selecSignUpButton() {
         getSignUpButton().click();
-        return page(SignUpPageObject.class)
+        return page(SignUpPageObject.class);
     }
 
 }
