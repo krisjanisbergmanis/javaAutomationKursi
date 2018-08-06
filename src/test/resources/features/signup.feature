@@ -1,5 +1,6 @@
 Feature: this feature is about creating new accounts
 
+#  @TEST
   Scenario: Successfull sign-up
     Given I have opened homepage
     When I select My account menu

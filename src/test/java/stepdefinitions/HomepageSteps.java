@@ -3,10 +3,13 @@ package stepdefinitions;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
-import pages.header.NavigationPageObject;
+import general.TestContext;
 
 public class HomepageSteps {
-    NavigationPageObject homepage = new NavigationPageObject();
+    private TestContext test;
+    public HomepageSteps(TestContext testContext) {
+        this.test = testContext;
+    }
 
     @Given("^I have opened homepage$")
     public void iHaveOpenedHomepage() throws Throwable {
@@ -15,16 +18,22 @@ public class HomepageSteps {
 
     @When("^I select My account menu$")
     public void iSelectMyAccountMenu() throws Throwable {
-        homepage.selectMyAccountButton();
+        test.getNavigationPage().selectMyAccountButton();
     }
 
     @And("^I select Sign up button$")
     public void iSelectSignUpButton() throws Throwable {
-        homepage.selecSignUpButton();
+        test.getNavigationPage().selecSignUpButton();
     }
 
     @And("^I select Log in option")
     public void iSelectLogInOption() throws Throwable {
-        homepage.selectLogInOption();
+        test.getNavigationPage().selectLogInOption();
+    }
+
+    @When("^I have logged out$")
+    public void iSelectUserAccountMenu() throws Throwable {
+        test.getNavigationPage().selectMyAccountButtonWhenLoggedIn(test.getUser().getEmailAddress());
+        test.getNavigationPage().selectLogOutOption();
     }
 }
