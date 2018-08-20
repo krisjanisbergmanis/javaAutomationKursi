@@ -11,6 +11,12 @@ public class SignupSteps {
         this.test = testContext;
     }
 
+
+    @And("^I am in Signup form$")
+    public void isSignUpOpened() throws Throwable {
+        test.getSignUpPage().isSignUpOpened();
+    }
+
     @And("^I enter First name$")
     public void iEnterFirstName() throws Throwable {
         test.getSignUpPage().enterFirstName(test.getUser().getFirstName());

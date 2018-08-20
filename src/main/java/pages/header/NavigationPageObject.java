@@ -3,6 +3,7 @@ package pages.header;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import pages.account.AccountPageObject;
+import pages.landingpage.BookingHotelsPageObject;
 import pages.login.LoginPageObject;
 import pages.sigunp.SignUpPageObject;
 
@@ -17,12 +18,11 @@ public class NavigationPageObject {
     private SelenideElement getMyAccountButtonWhenLoggedIn(String username) {
         return $(By.xpath("//nav/descendant::a[contains(text(),'" + username + "')]"));
     }
-
     private SelenideElement getSignUpButton() { return $("#collapse #li_myaccount [href*='register']"); }
-
     private SelenideElement getLoginButton() { return $("#collapse #li_myaccount [href*='login']"); }
-
     private SelenideElement getLogoutButton() { return $(".open [href*='logout']"); }
+    private SelenideElement getHomeButton() { return $("li a[href='https://www.phptravels.net/']"); }
+    private SelenideElement getHotels() { return $("[title ='Hotels']"); }
 
     public void selectMyAccountButton() {
         getMyAccountButton().click();
@@ -47,4 +47,15 @@ public class NavigationPageObject {
         getLogoutButton().click();
         return page(NavigationPageObject.class);
     }
+
+    public BookingHotelsPageObject selectHomeButton() {
+        getHomeButton().click();
+        return page(BookingHotelsPageObject.class);
+    }
+
+    public BookingHotelsPageObject selectHotels() {
+        getHotels().click();
+        return page(BookingHotelsPageObject.class);
+    }
+
 }

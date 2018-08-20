@@ -32,8 +32,28 @@ public class HomepageSteps {
     }
 
     @When("^I have logged out$")
-    public void iSelectUserAccountMenu() throws Throwable {
+    public void iLogOut() throws Throwable {
         test.getNavigationPage().selectMyAccountButtonWhenLoggedIn(test.getUser().getEmailAddress());
         test.getNavigationPage().selectLogOutOption();
+    }
+
+    @When("^I select User account menu$")
+    public void iSelectUserAccountMenu() throws Throwable {
+        test.getNavigationPage().selectMyAccountButtonWhenLoggedIn(test.getUser().getEmailAddress());
+    }
+
+    @When("^When I select Home button in Navigation bar$")
+    public void iSelectHomeButton() throws Throwable {
+        test.getNavigationPage().selectHomeButton();
+    }
+
+    @When("^I select book Hotels button$")
+    public void iSelectBookHotels() throws Throwable {
+        test.getNavigationPage().selectHotels();
+    }
+
+    @When("^I enter ([^\\”]*) hotel$")
+    public void iOpenHotelDetails(String hotel) throws Throwable {
+        test.getBookingHotelsPage().selectHotelDetails(hotel);
     }
 }

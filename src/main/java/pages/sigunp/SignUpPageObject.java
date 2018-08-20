@@ -64,4 +64,13 @@ public class SignUpPageObject {
         getSignUpButton().click();
         return page(AccountPageObject.class);
     }
+
+    public void isSignUpOpened() {
+        getFirstNameField().isDisplayed();
+        getLastNameField().isDisplayed();
+        getMobileNumberField().isDisplayed();
+        getPasswordField().isDisplayed();
+        getConfirmPasswordField().isDisplayed();
+        getSignUpButton().isDisplayed();
+    }
 }
