@@ -8,8 +8,16 @@ import static com.codeborne.selenide.Selenide.page;
 
 public class LoginPageObject {
 
+    private SelenideElement getUserNameField() {
+        return $("[name='username']");
+    }
+
     private SelenideElement getLoginButton() {
-        return $("test");
+        return $(".btn-lg[type='submit']");
+    }
+
+    public void enterUserName(String email) {
+        getUserNameField().sendKeys(email);
     }
 
     public AccountPageObject pressLoginButton() {

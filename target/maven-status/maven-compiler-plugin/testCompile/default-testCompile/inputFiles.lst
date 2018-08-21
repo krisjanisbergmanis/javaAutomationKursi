@@ -1,3 +1,7 @@
 /Users/tdlpacpro/Documents/javaAutomation/src/test/java/testrunner/TestRunner.java
+/Users/tdlpacpro/Documents/javaAutomation/src/test/java/stepdefinitions/HomepageSteps.java
+/Users/tdlpacpro/Documents/javaAutomation/src/test/java/stepdefinitions/LoginSteps.java
+/Users/tdlpacpro/Documents/javaAutomation/src/test/java/stepdefinitions/Hooks.java
+/Users/tdlpacpro/Documents/javaAutomation/src/test/java/stepdefinitions/BookingSteps.java
 /Users/tdlpacpro/Documents/javaAutomation/src/test/java/stepdefinitions/SignupSteps.java
-/Users/tdlpacpro/Documents/javaAutomation/src/test/java/stepdefinitions/hooks.java
+/Users/tdlpacpro/Documents/javaAutomation/src/test/java/stepdefinitions/AccountSteps.java
