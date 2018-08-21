@@ -5,7 +5,9 @@ import general.TestContext;
 
 public class BookingSteps {
     private TestContext test;
-
+public BookingSteps(TestContext test) {
+    this.test = test;
+};
     @When("^I select ([^\\”]*) as Check in date$")
     public void iSelectCheckInDate(String date) throws Throwable {
         test.getHotelDetailsPage().enterCheckInDate(date);
@@ -36,7 +38,7 @@ public class BookingSteps {
     }
 
     @When("^([^\\”]*) invoice page is opened$")
-    public void iConfirmPayment(String invoiceStatus) throws Throwable {
+    public void iSeeIvoice(String invoiceStatus) throws Throwable {
         test.getInvoicePageObject().isInvoiceVisible(invoiceStatus);
     }
 }
